@@ -1,0 +1,48 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+.vercel/
+
+# production/build artifacts
+dist/
+build/
+coverage/
+generated/prisma/
+
+# env/secrets
+.env
+.env.*
+!.env.example
+!.env.docker.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# typescript incremental build cache
+tsconfig.tsbuildinfo
+
+# local production/state artifacts
+backups/
+tailscale-acl-*.json
+dogfood-output/
+**/__pycache__/
+*.pyc
+public/build-info.json
+

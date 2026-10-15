@@ -1,0 +1,646 @@
+[
+ {
+  "id": 1,
+  "product_name": "デモ ビタミンC 1000",
+  "point_value": 300,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ビタミンC",
+   "ビタC"
+  ],
+  "variant_id": 1,
+  "variant_label": "60粒",
+  "variant_display_shortcut": "60粒",
+  "variant_point_value": 300,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 1,
+  "product_name": "デモ ビタミンC 1000",
+  "point_value": 550,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ビタミンC",
+   "ビタC"
+  ],
+  "variant_id": 2,
+  "variant_label": "120粒",
+  "variant_display_shortcut": "120粒",
+  "variant_point_value": 550,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 2,
+  "product_name": "デモ マルチビタミン＆ミネラル",
+  "point_value": 400,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "マルチ",
+   "マルチビタミン"
+  ],
+  "variant_id": 3,
+  "variant_label": "30日分",
+  "variant_display_shortcut": "30日",
+  "variant_point_value": 400,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 2,
+  "product_name": "デモ マルチビタミン＆ミネラル",
+  "point_value": 1000,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "マルチ",
+   "マルチビタミン"
+  ],
+  "variant_id": 4,
+  "variant_label": "90日分",
+  "variant_display_shortcut": "90日",
+  "variant_point_value": 1000,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 3,
+  "product_name": "デモ 乳酸菌サプリ",
+  "point_value": 500,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "乳酸菌"
+  ],
+  "variant_id": 5,
+  "variant_label": "30包",
+  "variant_display_shortcut": "30包",
+  "variant_point_value": 500,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 4,
+  "product_name": "デモ 青汁ゴールド",
+  "point_value": 600,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "青汁"
+  ],
+  "variant_id": 6,
+  "variant_label": "30包",
+  "variant_display_shortcut": "30包",
+  "variant_point_value": 600,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 4,
+  "product_name": "デモ 青汁ゴールド",
+  "point_value": 1100,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "青汁"
+  ],
+  "variant_id": 7,
+  "variant_label": "60包",
+  "variant_display_shortcut": "60包",
+  "variant_point_value": 1100,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 5,
+  "product_name": "デモ コラーゲンドリンク",
+  "point_value": 800,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "コラーゲン"
+  ],
+  "variant_id": 8,
+  "variant_label": "50ml×10本",
+  "variant_display_shortcut": "10本",
+  "variant_point_value": 800,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 5,
+  "product_name": "デモ コラーゲンドリンク",
+  "point_value": 2200,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "コラーゲン"
+  ],
+  "variant_id": 9,
+  "variant_label": "50ml×30本",
+  "variant_display_shortcut": "30本",
+  "variant_point_value": 2200,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 6,
+  "product_name": "デモ グルコサミン",
+  "point_value": 700,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "グルコ"
+  ],
+  "variant_id": 10,
+  "variant_label": "180粒",
+  "variant_display_shortcut": "180粒",
+  "variant_point_value": 700,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 7,
+  "product_name": "デモ DHA&EPA",
+  "point_value": 650,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "DHA",
+   "EPA",
+   "オメガ3"
+  ],
+  "variant_id": 11,
+  "variant_label": "90粒",
+  "variant_display_shortcut": "90粒",
+  "variant_point_value": 650,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 8,
+  "product_name": "デモ 鉄＆葉酸",
+  "point_value": 350,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "鉄",
+   "葉酸"
+  ],
+  "variant_id": 12,
+  "variant_label": "60粒",
+  "variant_display_shortcut": "60粒",
+  "variant_point_value": 350,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 9,
+  "product_name": "デモ 亜鉛",
+  "point_value": 250,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "亜鉛"
+  ],
+  "variant_id": 13,
+  "variant_label": "60粒",
+  "variant_display_shortcut": "60粒",
+  "variant_point_value": 250,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 10,
+  "product_name": "デモ プロテイン ココア味",
+  "point_value": 900,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "プロテイン",
+   "ココア"
+  ],
+  "variant_id": 14,
+  "variant_label": "300g",
+  "variant_display_shortcut": "300g",
+  "variant_point_value": 900,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 10,
+  "product_name": "デモ プロテイン ココア味",
+  "point_value": 2500,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "プロテイン",
+   "ココア"
+  ],
+  "variant_id": 15,
+  "variant_label": "1kg",
+  "variant_display_shortcut": "1kg",
+  "variant_point_value": 2500,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 11,
+  "product_name": "デモ 睡眠サポート",
+  "point_value": 700,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "睡眠",
+   "スリープ"
+  ],
+  "variant_id": 16,
+  "variant_label": "30粒",
+  "variant_display_shortcut": "30粒",
+  "variant_point_value": 700,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 12,
+  "product_name": "デモ 目の健康ルテイン",
+  "point_value": 600,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ルテイン",
+   "目"
+  ],
+  "variant_id": 17,
+  "variant_label": "30日分",
+  "variant_display_shortcut": "30日",
+  "variant_point_value": 600,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 13,
+  "product_name": "デモ 黒酢カプセル",
+  "point_value": 500,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "黒酢"
+  ],
+  "variant_id": 18,
+  "variant_label": "90粒",
+  "variant_display_shortcut": "90粒",
+  "variant_point_value": 500,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 14,
+  "product_name": "デモ 高麗人参エキス",
+  "point_value": 1500,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "人参",
+   "高麗"
+  ],
+  "variant_id": 19,
+  "variant_label": "50ml×10本",
+  "variant_display_shortcut": "10本",
+  "variant_point_value": 1500,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 15,
+  "product_name": "デモ ナットウエキス",
+  "point_value": 1200,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ナットウ"
+  ],
+  "variant_id": 20,
+  "variant_label": "60粒",
+  "variant_display_shortcut": "60粒",
+  "variant_point_value": 1200,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 15,
+  "product_name": "デモ ナットウエキス",
+  "point_value": 3300,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ナットウ"
+  ],
+  "variant_id": 21,
+  "variant_label": "3個セット",
+  "variant_display_shortcut": "3個組",
+  "variant_point_value": 3300,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 16,
+  "product_name": "デモ 胃腸サポート顆粒",
+  "point_value": 300,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "胃腸"
+  ],
+  "variant_id": 22,
+  "variant_label": "12包",
+  "variant_display_shortcut": "12包",
+  "variant_point_value": 300,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 17,
+  "product_name": "デモ 栄養ドリンク ゴールド",
+  "point_value": 200,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ドリンク",
+   "ゴールド"
+  ],
+  "variant_id": 23,
+  "variant_label": "50ml×3本",
+  "variant_display_shortcut": "3本",
+  "variant_point_value": 200,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 17,
+  "product_name": "デモ 栄養ドリンク ゴールド",
+  "point_value": 600,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ドリンク",
+   "ゴールド"
+  ],
+  "variant_id": 24,
+  "variant_label": "50ml×10本",
+  "variant_display_shortcut": "10本",
+  "variant_point_value": 600,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 18,
+  "product_name": "デモ 青のり酵素",
+  "point_value": 450,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "酵素"
+  ],
+  "variant_id": 25,
+  "variant_label": "30包",
+  "variant_display_shortcut": "30包",
+  "variant_point_value": 450,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 19,
+  "product_name": "デモ ハトムギ美肌",
+  "point_value": 400,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "ハトムギ"
+  ],
+  "variant_id": 26,
+  "variant_label": "90粒",
+  "variant_display_shortcut": "90粒",
+  "variant_point_value": 400,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 20,
+  "product_name": "デモ カルシウム＆マグネシウム",
+  "point_value": 350,
+  "category": "ヘルスケア",
+  "scope": "global",
+  "aliases": [
+   "カルシウム",
+   "カルマグ"
+  ],
+  "variant_id": 27,
+  "variant_label": "90粒",
+  "variant_display_shortcut": "90粒",
+  "variant_point_value": 350,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 21,
+  "product_name": "デモ 保湿化粧水",
+  "point_value": 500,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "化粧水"
+  ],
+  "variant_id": 28,
+  "variant_label": "200ml",
+  "variant_display_shortcut": "200ml",
+  "variant_point_value": 500,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 21,
+  "product_name": "デモ 保湿化粧水",
+  "point_value": 400,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "化粧水"
+  ],
+  "variant_id": 29,
+  "variant_label": "詰替 180ml",
+  "variant_display_shortcut": "詰替",
+  "variant_point_value": 400,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 22,
+  "product_name": "デモ 美容液 セラム",
+  "point_value": 1200,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "美容液",
+   "セラム"
+  ],
+  "variant_id": 30,
+  "variant_label": "30ml",
+  "variant_display_shortcut": "30ml",
+  "variant_point_value": 1200,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 23,
+  "product_name": "デモ オールインワンジェル",
+  "point_value": 800,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "オールインワン",
+   "ジェル"
+  ],
+  "variant_id": 31,
+  "variant_label": "100g",
+  "variant_display_shortcut": "100g",
+  "variant_point_value": 800,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 24,
+  "product_name": "デモ 日焼け止めミルク",
+  "point_value": 450,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "日焼け止め",
+   "UV"
+  ],
+  "variant_id": 32,
+  "variant_label": "50ml",
+  "variant_display_shortcut": "50ml",
+  "variant_point_value": 450,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 25,
+  "product_name": "デモ 薬用ハンドクリーム",
+  "point_value": 200,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "ハンドクリーム"
+  ],
+  "variant_id": 33,
+  "variant_label": "50g",
+  "variant_display_shortcut": "50g",
+  "variant_point_value": 200,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 26,
+  "product_name": "デモ クレンジングオイル",
+  "point_value": 400,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "クレンジング"
+  ],
+  "variant_id": 34,
+  "variant_label": "150ml",
+  "variant_display_shortcut": "150ml",
+  "variant_point_value": 400,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 27,
+  "product_name": "デモ 洗顔フォーム",
+  "point_value": 250,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "洗顔"
+  ],
+  "variant_id": 35,
+  "variant_label": "120g",
+  "variant_display_shortcut": "120g",
+  "variant_point_value": 250,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 28,
+  "product_name": "デモ アイクリーム",
+  "point_value": 900,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "アイ"
+  ],
+  "variant_id": 36,
+  "variant_label": "15g",
+  "variant_display_shortcut": "15g",
+  "variant_point_value": 900,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 29,
+  "product_name": "デモ リップバーム",
+  "point_value": 150,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "リップ"
+  ],
+  "variant_id": 37,
+  "variant_label": "4g",
+  "variant_display_shortcut": "4g",
+  "variant_point_value": 150,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 30,
+  "product_name": "デモ シートマスク",
+  "point_value": 300,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "マスク",
+   "パック"
+  ],
+  "variant_id": 38,
+  "variant_label": "7枚入",
+  "variant_display_shortcut": "7枚",
+  "variant_point_value": 300,
+  "variant_aliases": [],
+  "sale_count": 0
+ },
+ {
+  "id": 30,
+  "product_name": "デモ シートマスク",
+  "point_value": 1000,
+  "category": "化粧品",
+  "scope": "global",
+  "aliases": [
+   "マスク",
+   "パック"
+  ],
+  "variant_id": 39,
+  "variant_label": "30枚入",
+  "variant_display_shortcut": "30枚",
+  "variant_point_value": 1000,
+  "variant_aliases": [],
+  "sale_count": 0
+ }
+]

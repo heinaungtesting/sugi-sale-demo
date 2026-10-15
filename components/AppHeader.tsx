@@ -1,0 +1,122 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { ConnectivityIndicator } from './ConnectivityIndicator';
+
+import { csrfFetch } from '@/lib/csrf-client';
+const pawIcon = <span className="paw-icon" aria-hidden="true" />;
+
+type Language = 'en' | 'ja';
+type ActivePage = 'home' | 'sales' | 'logs' | 'feedback' | 'sessions' | 'admin';
+
+type Props = {
+  user: { id: number; displayName: string; role?: string };
+  totalPoints: number;
+  totalItems: number;
+  backHref?: string;
+  language?: Language;
+  onLanguageChange?: (language: Language) => void;
+  activePage?: ActivePage;
+  summaryLabel?: string;
+  pointsScopeLabel?: string;
+  showMetrics?: boolean;
+};
+
+const copy = {
+  en: {
+    loggedBy: 'Logged by',
+    categories: '← Categories',
+    logout: 'Logout',
+    home: 'Home',
+    calendar: 'Calendar',
+    logs: 'All logs',
+    feedback: 'Feedback',
+    sessions: 'Devices',
+    admin: 'Admin',
+    todayLogged: 'Today logged',
+    items: 'items',
+    points: 'Points',
+    today: 'today',
+    summaryAria: 'Today summary',
+  },
+  ja: {
+    loggedBy: '記録者',
+    categories: '← カテゴリー',
+    logout: 'ログアウト',
+    home: 'ホーム',
+    calendar: '履歴',
+    logs: '全記録',
+    feedback: 'ご意見',
+    sessions: '端末',
+    admin: '管理',
+    todayLogged: '今日の記録',
+    items: '点',
+    points: 'ポイント',
+    today: '本日',
+    summaryAria: '本日のサマリー',
+  },
+} satisfies Record<Language, Record<string, string>>;
+
+export function AppHeader({ user, totalPoints, totalItems, backHref, language, onLanguageChange, activePage = 'home', summaryLabel, pointsScopeLabel, showMetrics = true }: Props) {
+  const router = useRouter();
+  const [localLanguage, setLocalLanguage] = useState<Language>('ja');
+  const activeLanguage = language ?? localLanguage;
+  const t = copy[activeLanguage];
+
+  useEffect(() => {
+    document.documentElement.lang = activeLanguage;
+    document.documentElement.setAttribute('lang', activeLanguage);
+  }, [activeLanguage]);
+
+  function switchLanguage(nextLanguage: Language) {
+    setLocalLanguage(nextLanguage);
+    onLanguageChange?.(nextLanguage);
+  }
+
+  async function logout() {
+    await csrfFetch('/api/auth/logout', { method: 'POST' });
+    router.replace('/login');
+  }
+
+  return (
+    <>
+      <header className="header home-hero">
+        <div className="header-row hero-top-row">
+          <div>
+            {backHref ? (
+              <Link className="back" href={backHref}>{t.categories}</Link>
+            ) : (
+              <div className="hero-kicker">
+                {pawIcon}{t.loggedBy} <span className="user-name-highlight">{user.displayName}</span>
+              </div>
+            )}
+          </div>
+          <div className="header-actions">
+            <ConnectivityIndicator userId={user.id} language={activeLanguage} />
+            <div className="language-toggle" aria-label="Language">
+              <button className={activeLanguage === 'en' ? 'active' : ''} onClick={() => switchLanguage('en')} type="button">English</button>
+              <button className={activeLanguage === 'ja' ? 'active' : ''} onClick={() => switchLanguage('ja')} type="button">日本語</button>
+            </div>
+            <button className="logout" onClick={logout}><span aria-hidden="true" className="logout-pup" />{t.logout}</button>
+          </div>
+        </div>
+        {showMetrics && (
+          <div className="hero-metrics" aria-label={t.summaryAria}>
+            <div className="hero-metric primary"><span>{summaryLabel ?? t.todayLogged}</span><strong>{totalItems}</strong><small>{t.items}</small><i className="metric-mascot dog" aria-hidden="true" /><b className="metric-heart" aria-hidden="true">♥</b></div>
+            <div className="hero-metric"><span>{t.points}</span><strong>{totalPoints}pt</strong><small>{pointsScopeLabel ?? t.today}</small><i className="metric-mascot cat orange" aria-hidden="true" /><b className="metric-sparkles" aria-hidden="true">✦</b></div>
+          </div>
+        )}
+      </header>
+      <nav className="nav bottom-nav" aria-label="Main navigation">
+        <Link href="/" aria-current={activePage === 'home' ? 'page' : undefined}><span className="nav-pet dog" aria-hidden="true" />{t.home}</Link>
+        <Link href="/sales" aria-current={activePage === 'sales' ? 'page' : undefined}><span className="nav-pet cat gray" aria-hidden="true" />{t.calendar}</Link>
+        <Link href="/logs" aria-current={activePage === 'logs' ? 'page' : undefined}><span className="nav-pet dog gold" aria-hidden="true" />{t.logs}</Link>
+        <Link href="/feedback" aria-current={activePage === 'feedback' ? 'page' : undefined}><span className="nav-pet cat orange" aria-hidden="true" />{t.feedback}</Link>
+        <Link href="/sessions" aria-current={activePage === 'sessions' ? 'page' : undefined}><span className="nav-pet cat gray" aria-hidden="true" />{t.sessions}</Link>
+        {user.role === 'admin' && <Link href="/admin" aria-current={activePage === 'admin' ? 'page' : undefined}><span className="nav-pet cat orange" aria-hidden="true" />{t.admin}</Link>}
+      </nav>
+    </>
+  );
+}
