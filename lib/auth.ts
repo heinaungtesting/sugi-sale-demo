@@ -1,5 +1,6 @@
 import { cookies } from 'next/headers';
 import bcrypt from 'bcryptjs';
+import { createHash } from 'node:crypto';
 import { queryOne } from './db';
 import { createSessionToken, verifySessionToken, type SessionClaims } from './session-token';
 import { logActivity } from './sugi-activity';
@@ -14,7 +15,10 @@ export const PIN_POLICY = /^\d{6,}$/;
 const DUMMY_PIN_HASH = '$2b$10$CwTycUXWue0Thq9StjUM0uJ8a8VIpyr6eL5N2E1LKDpi5E2f6QfCa';
 
 function sessionSecret(): string {
-  const secret = process.env.SUGI_SESSION_SECRET;
+  // Demo deployment: derive a stable secret from the (secret) database URL when
+  // SUGI_SESSION_SECRET is not configured, so no extra secret has to be provisioned.
+  const secret = process.env.SUGI_SESSION_SECRET
+    || (process.env.DATABASE_URL ? createHash('sha256').update(`sugi-demo-session:${process.env.DATABASE_URL}`).digest('hex') : undefined);
   if (!secret && process.env.NODE_ENV === 'production') {
     throw new Error('SUGI_SESSION_SECRET is required in production');
   }
