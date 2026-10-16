@@ -39,7 +39,9 @@ function requirePostgresUrl(variableName: 'DATABASE_URL' | 'DIRECT_URL', connect
 }
 
 export function requireDatabaseUrl(environment: DatabaseEnvironment = process.env): string {
-  return requirePostgresUrl('DATABASE_URL', environment.DATABASE_URL);
+  // Demo deployment on Neon: its pooler rejects the search_path startup option,
+  // so prefer the unpooled URL when the integration provides one.
+  return requirePostgresUrl('DATABASE_URL', environment.DATABASE_URL_UNPOOLED || environment.DATABASE_URL);
 }
 
 export function requireDirectUrl(environment: DatabaseEnvironment = process.env): string {
