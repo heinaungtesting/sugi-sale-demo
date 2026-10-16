@@ -384,8 +384,8 @@ const main = async () => {
 };
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  void main().catch(() => {
-    console.error('catalog seed failed');
+  void main().catch((error) => {
+    console.error('catalog seed failed', error instanceof Error ? error.message : error);
     process.exitCode = 1;
   });
 }
